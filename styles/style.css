@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 a.accent-text {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 a.accent-text:hover {
@@ -8,7 +8,7 @@ a.accent-text:hover {
 }
 
 .page {
-  font-family: 'IBM Plex mono', serif;
+  font-family: "IBM Plex mono", serif;
   background-image: url(/images/cover-image.png);
   background-size: cover;
   background-position: center;
@@ -204,7 +204,7 @@ a.accent-text:hover {
   .content__section {
     margin-block-start: 80px;
   }
-  
+
   .content__section:first-of-type {
     margin-block-start: 60px;
   }
@@ -212,15 +212,15 @@ a.accent-text:hover {
   .content__section-focus {
     grid-template-columns: 1fr 2fr;
   }
-  
+
   .content__section-focus .content__section-article {
     grid-column-start: 2;
   }
-  
+
   .content__section-concentrate .content__section-heading {
     max-width: 236px;
   }
-  
+
   .content__section-fish {
     grid-template-columns: 1fr 2fr;
   }
@@ -236,9 +236,9 @@ a.accent-text:hover {
   .content__section-gallery {
     gap: 20px;
     grid-template-areas:
-    "top top right "
-    "left center right"
-    "left bottom bottom";
+      "top top right "
+      "left center right"
+      "left bottom bottom";
   }
 
   .img-sunset {
@@ -290,5 +290,4 @@ a.accent-text:hover {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
-
 }

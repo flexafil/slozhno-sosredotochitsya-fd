@@ -9,15 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-color: #FFF1F7;
+  --bg-color: #fff1f7;
   --text-color: #353430;
-  --title-color: #FFC2E6;
-  --subheading-color: #FF8DCB;
+  --title-color: #ffc2e6;
+  --subheading-color: #ff8dcb;
 }
 
 .theme-light a.accent-text {
   color: var(--text-color, #353430);
-  text-shadow: 2px 2px var(--subheading-color, #FF8DCB);  
+  text-shadow: 2px 2px var(--subheading-color, #ff8dcb);
 }
 
 .theme-light a.accent-text:focus-visible {
@@ -27,7 +27,7 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  background-color: var(--bg-color), #FFF1F7;
+  background-color: var(--bg-color), #fff1f7;
   background-image: url(/images/cover-image-light.png);
   color: var(--text-color, #353430);
 }
@@ -65,8 +65,8 @@
 }
 
 .theme-light .title {
-  color: var(--title-color, #FFC2E6);
-  text-shadow: 4px 4px 0 var(--subheading-color, #FF8DCB);
+  color: var(--title-color, #ffc2e6);
+  text-shadow: 4px 4px 0 var(--subheading-color, #ff8dcb);
 }
 
 .theme-light .subtitle,
@@ -75,7 +75,7 @@
 }
 
 .theme-light .title-decor {
-  background-color: var(--subheading-color, #FF8DCB);
+  background-color: var(--subheading-color, #ff8dcb);
 }
 
 .theme-light .content__section-heading {
@@ -83,8 +83,8 @@
 }
 
 .theme-light .footer__text {
-  color: var(--title-color, #FFC2E6);
-  text-shadow: 2px 2px 0 var(--subheading-color, #FF8DCB);
+  color: var(--title-color, #ffc2e6);
+  text-shadow: 2px 2px 0 var(--subheading-color, #ff8dcb);
 }
 
 .theme-light .footer::before {
@@ -99,89 +99,89 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #FFF1F7;
-  --text-color: #353430;
-  --title-color: #FFC2E6;
-  --subheading-color: #FF8DCB;   
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+    --subheading-color: #ff8dcb;
   }
 
   .theme-light a.accent-text {
     color: var(--text-color, #353430);
-    text-shadow: 2px 2px var(--subheading-color, #FF8DCB);  
+    text-shadow: 2px 2px var(--subheading-color, #ff8dcb);
   }
-  
+
   .theme-light a.accent-text:focus-visible {
     outline: none;
     border: 1px solid var(--text-color, #353430);
   }
-  
+
   .theme-light .page {
     /* Вам также нужно будет написать ряд подобных селекторов */
-    background-color: var(--bg-color), #FFF1F7;
+    background-color: var(--bg-color), #fff1f7;
     background-image: url(/images/cover-image-light.png);
     color: var(--text-color, #353430);
   }
-  
+
   .theme-light .header__rec {
     display: none;
   }
-  
+
   .theme-light .header::before {
     border-top: 1px solid var(--text-color, #353430);
     border-right: 1px solid var(--text-color, #353430);
   }
-  
+
   .theme-light .header::after {
     border-bottom: 1px solid var(--text-color, #353430);
     border-left: 1px solid var(--text-color, #353430);
   }
-  
+
   .theme-light .header__theme-menu-button {
     color: var(--text-color, #353430);
   }
-  
+
   .theme-light .header__theme-menu-button:hover {
     border: 1px solid rgba(53, 52, 48, 0.4);
   }
-  
+
   .theme-light .header__theme-menu-button:focus-visible {
     outline: none;
     border: none;
     border-bottom: 1px solid var(--text-color, #353430);
   }
-  
+
   .theme-light .header__theme-menu-button_active {
     border: 1px solid var(--text-color, #353430);
   }
-  
+
   .theme-light .title {
-    color: var(--title-color, #FFC2E6);
-    text-shadow: 4px 4px 0 var(--subheading-color, #FF8DCB);
+    color: var(--title-color, #ffc2e6);
+    text-shadow: 4px 4px 0 var(--subheading-color, #ff8dcb);
   }
-  
+
   .theme-light .subtitle,
   .theme-light .content__section-subheading {
     color: var(--text-color, #353430);
   }
-  
+
   .theme-light .title-decor {
-    background-color: var(--subheading-color, #FF8DCB);
+    background-color: var(--subheading-color, #ff8dcb);
   }
-  
+
   .theme-light .content__section-heading {
     color: var(--text-color, #353430);
   }
-  
+
   .theme-light .footer__text {
-    color: var(--title-color, #FFC2E6);
-    text-shadow: 2px 2px 0 var(--subheading-color, #FF8DCB);
+    color: var(--title-color, #ffc2e6);
+    text-shadow: 2px 2px 0 var(--subheading-color, #ff8dcb);
   }
-  
+
   .theme-light .footer::before {
     border-top: 1px solid var(--text-color, #353430);
     border-right: 1px solid var(--text-color, #353430);
   }
-  
+
   .theme-light .footer::after {
     border-bottom: 1px solid var(--text-color, #353430);
     border-left: 1px solid var(--text-color, #353430);

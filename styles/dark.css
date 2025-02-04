@@ -10,33 +10,33 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --title-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
   --heading-color: #ff0070;
 }
 
 a.accent-text {
   color: var(--text-color, #f1b2ce);
-  text-shadow: var(--heading-color, #FF0070) 2px 2px;  
+  text-shadow: var(--heading-color, #ff0070) 2px 2px;
 }
 
 a.accent-text:focus-visible {
   outline: none;
-  border: 1px solid var(--text-color, #F1B2CE);
+  border: 1px solid var(--text-color, #f1b2ce);
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-color: var(--bg-color), #000028;
   background-image: url(/images/cover-image-dark.png);
-  color: var(--text-color, #F1B2CE);
+  color: var(--text-color, #f1b2ce);
 }
 
 .theme-dark .header__rec {
   position: absolute;
   display: inline;
   right: 28px;
-  color: var(--heading-color, #FF0070);
+  color: var(--heading-color, #ff0070);
 }
 
 .theme-dark .header__rec::after {
@@ -48,7 +48,7 @@ a.accent-text:focus-visible {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: var(--heading-color, #FF0070);
+  background-color: var(--heading-color, #ff0070);
   box-shadow: 0 0 4px 2px var(--heading-color, #ff0070);
 }
 
@@ -81,7 +81,7 @@ a.accent-text:focus-visible {
 }
 
 .theme-dark .title {
-  color: var(--title-color, #DB00FF);
+  color: var(--title-color, #db00ff);
   text-shadow: 4px 4px 0 var(--heading-color, #ff0070);
 }
 
@@ -99,7 +99,7 @@ a.accent-text:focus-visible {
 }
 
 .theme-dark .footer__text {
-  color: var(--title-color, #DB00FF);
+  color: var(--title-color, #db00ff);
   text-shadow: 2px 2px 0 var(--heading-color, #ff0070);
 }
 
