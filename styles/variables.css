@@ -3,9 +3,14 @@
   и их переопределение под различные устройства
 */
 :root {
+  --bg-image: url(../images/cover-image-dark.png);
   --main-font: 'IBM Plex mono';
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --title-color: #DB00FF;
+  --subtitle-color: #000028;
   --heading-color: #ff0070;
+  --subheading-color: #000028;
+  --titles-decor: #ff0070;
+  --button-border: rgba(255, 0, 112, 0.4);
 }

@@ -1,19 +1,28 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 a.accent-text {
   text-decoration: none;
+  color: var(--text-color, #f1b2ce);
+  text-shadow: var(--titles-decor, #ff0070) 2px 2px;
 }
 
 a.accent-text:hover {
   border-bottom: 1px solid var(--text-color, #F1B2CE);
 }
 
+a.accent-text:focus-visible {
+  outline: none;
+  border: 1px solid var(--text-color, #f1b2ce);
+}
+
 .page {
-  font-family: "IBM Plex mono", monospace;
-  background-image: url(../images/cover-image.png);
+  font-family: var(--main-font), monospace;
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-size: 18px;
+  background-color: var(--bg-color, #000028);
+  color: var(--text-color, #F1B2CE);
 }
 
 .header {
@@ -32,6 +41,8 @@ a.accent-text:hover {
   right: 0;
   width: 25px;
   height: 25px;
+  border-top: 1px solid var(--heading-color, #ff0070);
+  border-right: 1px solid var(--heading-color, #ff0070);
 }
 
 .decorated-zone::after {
@@ -41,11 +52,27 @@ a.accent-text:hover {
   left: 0;
   width: 25px;
   height: 25px;
+  border-bottom: 1px solid var(--heading-color, #ff0070);
+  border-left: 1px solid var(--heading-color, #ff0070);
 }
 
 .header__rec {
+  position: absolute;
+  right: 28px;
   text-transform: uppercase;
-  display: none;
+  color: var(--heading-color, #ff0070);
+}
+
+.header__rec::after {
+  content: "";
+  position: absolute;
+  margin: 7px;
+  margin-left: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--heading-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--titles-decor, #ff0070)
 }
 
 .header__theme-menu {
@@ -72,17 +99,30 @@ a.accent-text:hover {
   font-size: 18px;
   font-family: var(--main-font);
   padding-bottom: 5px;
-  cursor: pointer
+  cursor: pointer;
+  color: var(--heading-color, #ff0070);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-border);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--heading-color, #ff0070);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: 1px solid var(--heading-color, #ff0070);
 }
 
 .title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   align-self: center;
+  color: var(--title-color, #db00ff);
+  text-shadow: 4px 4px 0 var(--titles-decor, #ff0070);
 }
 
 .subtitle {
@@ -92,6 +132,7 @@ a.accent-text:hover {
   justify-self: end;
   align-self: center;
   max-width: 364px;
+  color: var(--subtitle-color, #000028);
 }
 
 .content {
@@ -108,6 +149,7 @@ a.accent-text:hover {
 
 .content__section-heading {
   font-size: 18px;
+  color: var(--heading-color, #ff0070);
 }
 
 .content__section-focus {
@@ -136,6 +178,11 @@ a.accent-text:hover {
 
 .content__section-subheading {
   font-size: 18px;
+  color: var(--subheading-color, #000028);
+}
+
+.title-decor {
+  background-color: var(--titles-decor, #ff0070);
 }
 
 .content__section-subheading-thin {
@@ -172,6 +219,8 @@ a.accent-text:hover {
 .footer__text {
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-color, #db00ff);
+  text-shadow: 2px 2px 0 var(--titles-decor, #ff0070);
 }
 
 @media (width >= 768px) {
