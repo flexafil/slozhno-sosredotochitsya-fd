@@ -20,6 +20,10 @@
   text-shadow: 2px 2px var(--subheading-color, #ff8dcb);
 }
 
+.theme-light a.accent-text:hover {
+  border-bottom: 1px solid var(--text-color, #353430);
+}
+
 .theme-light a.accent-text:focus-visible {
   outline: none;
   border: 1px solid var(--text-color, #353430);
@@ -28,7 +32,7 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-color: var(--bg-color), #fff1f7;
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
   color: var(--text-color, #353430);
 }
 
@@ -36,12 +40,12 @@
   display: none;
 }
 
-.theme-light .header::before {
+.theme-light .decorated-zone::before {
   border-top: 1px solid var(--text-color, #353430);
   border-right: 1px solid var(--text-color, #353430);
 }
 
-.theme-light .header::after {
+.theme-light .decorated-zone::after {
   border-bottom: 1px solid var(--text-color, #353430);
   border-left: 1px solid var(--text-color, #353430);
 }
@@ -87,16 +91,6 @@
   text-shadow: 2px 2px 0 var(--subheading-color, #ff8dcb);
 }
 
-.theme-light .footer::before {
-  border-top: 1px solid var(--text-color, #353430);
-  border-right: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .footer::after {
-  border-bottom: 1px solid var(--text-color, #353430);
-  border-left: 1px solid var(--text-color, #353430);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
@@ -110,6 +104,10 @@
     text-shadow: 2px 2px var(--subheading-color, #ff8dcb);
   }
 
+  .theme-light a.accent-text:hover {
+    border-bottom: 1px solid var(--text-color, #353430);
+  }
+
   .theme-light a.accent-text:focus-visible {
     outline: none;
     border: 1px solid var(--text-color, #353430);
@@ -118,7 +116,7 @@
   .theme-light .page {
     /* Вам также нужно будет написать ряд подобных селекторов */
     background-color: var(--bg-color), #fff1f7;
-    background-image: url(/images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
     color: var(--text-color, #353430);
   }
 
@@ -126,12 +124,12 @@
     display: none;
   }
 
-  .theme-light .header::before {
+  .theme-light .decorated-zone::before {
     border-top: 1px solid var(--text-color, #353430);
     border-right: 1px solid var(--text-color, #353430);
   }
 
-  .theme-light .header::after {
+  .theme-light .decorated-zone::after {
     border-bottom: 1px solid var(--text-color, #353430);
     border-left: 1px solid var(--text-color, #353430);
   }
@@ -175,15 +173,5 @@
   .theme-light .footer__text {
     color: var(--title-color, #ffc2e6);
     text-shadow: 2px 2px 0 var(--subheading-color, #ff8dcb);
-  }
-
-  .theme-light .footer::before {
-    border-top: 1px solid var(--text-color, #353430);
-    border-right: 1px solid var(--text-color, #353430);
-  }
-
-  .theme-light .footer::after {
-    border-bottom: 1px solid var(--text-color, #353430);
-    border-left: 1px solid var(--text-color, #353430);
   }
 }

@@ -4,12 +4,12 @@ a.accent-text {
 }
 
 a.accent-text:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color, #F1B2CE);
 }
 
 .page {
-  font-family: "IBM Plex mono", serif;
-  background-image: url(/images/cover-image.png);
+  font-family: "IBM Plex mono", monospace;
+  background-image: url(../images/cover-image.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,30 +18,33 @@ a.accent-text:hover {
 
 .header {
   position: relative;
-  height: 1vh;
   min-height: 668px;
+  height: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin: 10px;
 }
 
-.header::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
+  top: 0;
   right: 0;
   width: 25px;
   height: 25px;
 }
 
-.header::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 25px;
   height: 25px;
 }
 
 .header__rec {
+  text-transform: uppercase;
   display: none;
 }
 
@@ -61,14 +64,15 @@ a.accent-text:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 26px;
+  min-width: 70px;
+  min-height: 26px;
   background-color: transparent;
   border: 0;
   text-transform: lowercase;
   font-size: 18px;
   font-family: var(--main-font);
   padding-bottom: 5px;
+  cursor: pointer
 }
 
 .header__theme-menu-button_active {
@@ -84,6 +88,7 @@ a.accent-text:hover {
 .subtitle {
   display: block;
   font-size: 18px;
+  font-weight: 700;
   justify-self: end;
   align-self: center;
   max-width: 364px;
@@ -129,6 +134,10 @@ a.accent-text:hover {
   grid-row: span 2;
 }
 
+.content__section-subheading {
+  font-size: 18px;
+}
+
 .content__section-subheading-thin {
   font-weight: 400;
 }
@@ -154,28 +163,10 @@ a.accent-text:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 1vh;
+  height: 100vh;
   min-height: 668px;
   margin-block-start: 40px;
   margin: 10px;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 25px;
-  height: 25px;
-}
-
-.footer::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
 }
 
 .footer__text {
@@ -188,7 +179,7 @@ a.accent-text:hover {
     margin: 20px 20px 20px 0;
   }
 
-  .header::after {
+  .decorated-zone::after {
     left: 20px;
   }
 

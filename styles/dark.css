@@ -15,12 +15,12 @@
   --heading-color: #ff0070;
 }
 
-a.accent-text {
+.theme-dark a.accent-text {
   color: var(--text-color, #f1b2ce);
   text-shadow: var(--heading-color, #ff0070) 2px 2px;
 }
 
-a.accent-text:focus-visible {
+.theme-dark a.accent-text:focus-visible {
   outline: none;
   border: 1px solid var(--text-color, #f1b2ce);
 }
@@ -28,7 +28,7 @@ a.accent-text:focus-visible {
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-color: var(--bg-color), #000028;
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
   color: var(--text-color, #f1b2ce);
 }
 
@@ -52,12 +52,12 @@ a.accent-text:focus-visible {
   box-shadow: 0 0 4px 2px var(--heading-color, #ff0070);
 }
 
-.theme-dark .header::before {
+.theme-dark .decorated-zone::before {
   border-top: 1px solid var(--heading-color, #ff0070);
   border-right: 1px solid var(--heading-color, #ff0070);
 }
 
-.theme-dark .header::after {
+.theme-dark .decorated-zone::after {
   border-bottom: 1px solid var(--heading-color, #ff0070);
   border-left: 1px solid var(--heading-color, #ff0070);
 }
@@ -101,14 +101,4 @@ a.accent-text:focus-visible {
 .theme-dark .footer__text {
   color: var(--title-color, #db00ff);
   text-shadow: 2px 2px 0 var(--heading-color, #ff0070);
-}
-
-.theme-dark .footer::before {
-  border-top: 1px solid var(--heading-color, #ff0070);
-  border-right: 1px solid var(--heading-color, #ff0070);
-}
-
-.theme-dark .footer::after {
-  border-bottom: 1px solid var(--heading-color, #ff0070);
-  border-left: 1px solid var(--heading-color, #ff0070);
 }
