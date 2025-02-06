@@ -31,14 +31,13 @@ a.accent-text:focus-visible {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  margin: 10px;
 }
 
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--heading-color, #ff0070);
@@ -48,8 +47,8 @@ a.accent-text:focus-visible {
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  left: 10px;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--heading-color, #ff0070);
@@ -58,7 +57,8 @@ a.accent-text:focus-visible {
 
 .header__rec {
   position: absolute;
-  right: 28px;
+  right: 38px;
+  top: 10px;
   text-transform: uppercase;
   color: var(--heading-color, #ff0070);
 }
@@ -78,12 +78,14 @@ a.accent-text:focus-visible {
 .header__theme-menu {
   justify-self: end;
   align-self: center;
+  margin-block-start: 10px;
+  margin-inline-end: 10px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   list-style-type: none;
 }
 
@@ -123,6 +125,7 @@ a.accent-text:focus-visible {
   align-self: center;
   color: var(--title-color, #db00ff);
   text-shadow: 4px 4px 0 var(--titles-decor, #ff0070);
+  margin-inline-start: 10px;
 }
 
 .subtitle {
@@ -133,6 +136,8 @@ a.accent-text:focus-visible {
   align-self: center;
   max-width: 364px;
   color: var(--subtitle-color, #000028);
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
 }
 
 .content {
@@ -213,7 +218,6 @@ a.accent-text:focus-visible {
   height: 100vh;
   min-height: 668px;
   margin-block-start: 40px;
-  margin: 10px;
 }
 
 .footer__text {
@@ -224,12 +228,32 @@ a.accent-text:focus-visible {
 }
 
 @media (width >= 768px) {
-  .header {
-    margin: 20px 20px 20px 0;
+  .header__rec {
+    right: 48px;
+    top: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
   }
 
   .decorated-zone::after {
     left: 20px;
+    bottom: 20px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 20px;
+    margin-inline-end: 20px;
+  }
+
+  .title {
+    margin-inline-start: 0px;
+  }
+
+  .subtitle {
+    margin-inline-end: 20px;
   }
 
   .title,
@@ -302,7 +326,6 @@ a.accent-text:focus-visible {
   }
 
   .footer {
-    margin: 20px;
     margin-block-start: 60px;
   }
 }
@@ -311,15 +334,18 @@ a.accent-text:focus-visible {
   .header__theme-menu {
     justify-self: center;
     align-self: auto;
+    margin-inline-end: 0px;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
+    gap: 10px;
   }
 
   .subtitle {
     max-width: 491px;
   }
+
 
   .content__section-concentrate .content__section-heading {
     grid-column: span 3;
