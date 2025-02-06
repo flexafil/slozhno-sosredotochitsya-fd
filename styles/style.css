@@ -21,6 +21,7 @@ a.accent-text:focus-visible {
   background-position: center;
   background-attachment: fixed;
   font-size: 18px;
+  line-height: 130%;
   background-color: var(--bg-color, #000028);
   color: var(--text-color, #F1B2CE);
 }
@@ -138,6 +139,7 @@ a.accent-text:focus-visible {
   color: var(--subtitle-color, #000028);
   margin-inline-start: 10px;
   margin-inline-end: 10px;
+  margin-block-end: 10px;
 }
 
 .content {
@@ -254,6 +256,7 @@ a.accent-text:focus-visible {
 
   .subtitle {
     margin-inline-end: 20px;
+    margin-block-end: 20px;
   }
 
   .title,
@@ -346,10 +349,13 @@ a.accent-text:focus-visible {
     max-width: 491px;
   }
 
-
   .content__section-concentrate .content__section-heading {
     grid-column: span 3;
     max-width: 315px;
+  }
+
+  .content__section-focus, .content__section-fish {
+    grid-template-columns: 315px 2fr;
   }
 
   .content__section-concentrate {

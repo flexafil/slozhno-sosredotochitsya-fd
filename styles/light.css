@@ -37,7 +37,7 @@
   --button-border: rgba(53, 52, 48, 0.4);
   }
 
-  .theme-light .header__rec {
+  .header__rec {
     display: none;
   }
 }
